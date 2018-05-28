@@ -15,6 +15,7 @@ if [ $rc -eq 0 ]; then
 		mkdir bin
 		mv fn_linux ./bin/fn
 		chmod +x ./bin/fn
+		chmod +x ./run.sh
 		PATH=$PATH:$HOME/bin
 else
     echo "After failed assembling"

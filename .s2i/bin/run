@@ -1,4 +1,5 @@
 #!/bin/bash
 echo "Before running application"
 #exec /usr/libexec/s2i/run
-fn start
+#fn start
+$HOME/run.sh
