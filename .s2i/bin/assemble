@@ -12,8 +12,10 @@ rc=$?
 if [ $rc -eq 0 ]; then
     echo "After successful assembling"
 		wget https://github.com/fnproject/cli/releases/download/0.4.100/fn_linux
-		mv fn_linux fn
-		chmod +x fn		
+		mkdir bin
+		mv fn_linux ./bin/fn
+		chmod +x fn
+		PATH=$PATH:$HOME/bin
 else
     echo "After failed assembling"
 fi
