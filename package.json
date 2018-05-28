@@ -1,0 +1,20 @@
+{
+  "name": "oc-fn",
+  "version": "1.0.0",
+  "description": "oc-fn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "fn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisgilg/oc-fn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisgilg/oc-fn/issues"
+  },
+  "homepage": "https://github.com/luisgilg/oc-fn#readme"
+}

@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "Before assembling"
+
+curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
+
+/usr/libexec/s2i/assemble
+rc=$?
+
+if [ $rc -eq 0 ]; then
+    echo "After successful assembling"
+				npm run build
+				#echo "Remove git"
+				#yum remove git
+				#echo "Install git"
+				#yum install git
+else
+    echo "After failed assembling"
+fi
+
+exit $rc
