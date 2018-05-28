@@ -14,7 +14,7 @@ if [ $rc -eq 0 ]; then
 		wget https://github.com/fnproject/cli/releases/download/0.4.100/fn_linux
 		mkdir bin
 		mv fn_linux ./bin/fn
-		chmod +x fn
+		chmod +x ./bin/fn
 		PATH=$PATH:$HOME/bin
 else
     echo "After failed assembling"
