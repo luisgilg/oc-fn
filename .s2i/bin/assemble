@@ -1,18 +1,18 @@
 #!/bin/bash
 echo "Before assembling"
 
-curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
+#curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
+
+#https://github.com/fnproject/cli/releases/download/0.4.100/fn_linux
+
 
 /usr/libexec/s2i/assemble
 rc=$?
 
 if [ $rc -eq 0 ]; then
     echo "After successful assembling"
-				npm run build
-				#echo "Remove git"
-				#yum remove git
-				#echo "Install git"
-				#yum install git
+		wget https://github.com/fnproject/cli/releases/download/0.4.100/fn_linux
+		mv fn_linux fn		
 else
     echo "After failed assembling"
 fi
